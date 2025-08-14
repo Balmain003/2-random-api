@@ -23,6 +23,6 @@ func Number(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(strconv.Itoa(randomnumber)))
 
 	// Дополнительно выводим в консоль (необязательно)
-	fmt.Println("Сгенерировано:", randomnumber)
+	fmt.Println(randomnumber)
 
 }
