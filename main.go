@@ -17,12 +17,12 @@ func main() {
 }
 
 func Number(w http.ResponseWriter, r *http.Request) {
-	randomnumber := rand.Intn(7) // Генерируем число от 0 до 6
+	randomnumber := rand.Intn(6) + 1 // Генерируем число от 1 до 6
 
 	// Преобразуем число в строку и отправляем клиенту
 	w.Write([]byte(strconv.Itoa(randomnumber)))
 
 	// Дополнительно выводим в консоль (необязательно)
-	fmt.Println("Сгенерировано:", randomnumber)
+	fmt.Println(randomnumber)
 
 }
